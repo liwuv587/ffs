@@ -31,6 +31,7 @@ var ffsCommand = cli.Command{
 	Flags: []cli.Flag{
 		config.FlagPort,
 		config.FlagMulticore,
+		config.FlagDebug,
 	},
 	SkipFlagParsing:        false,
 	SkipArgReorder:         false,

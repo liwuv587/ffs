@@ -30,4 +30,16 @@ var (
 		Hidden:      false,
 		Destination: &Multicore,
 	}
+
+	// Debug 调试模式
+	Debug     bool = false
+	FlagDebug      = cli.BoolTFlag{
+		Name:        "debug",
+		Usage:       "启用 debug 模式",
+		EnvVar:      "FFS_DEBUG",
+		FilePath:    "",
+		Required:    false,
+		Hidden:      false,
+		Destination: &Debug,
+	}
 )
